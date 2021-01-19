@@ -7,8 +7,7 @@ public class Vehicle {
 	private String company="";
 	private String engine="800";
 	public static int count=0;
-	
-	
+		
 	public Vehicle(){
 		count++;
 		
