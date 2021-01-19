@@ -81,7 +81,7 @@ public class Vehicle {
 	}
 	
 	public static String getVehicle() {
-		return "123";
+		return "Vehicle";
 		  
 	}
 
