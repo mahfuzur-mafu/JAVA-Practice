@@ -11,8 +11,7 @@ public class Car extends Vehicle {
 		this.led=led;
 		
 	}
-	
-	
+		
 	public String getName () {
 		return "This is your car : "+ super.getName();
 	}
