@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>HomePage</title>
+</head>
+<body style="background-color: Tomato;">
+
+	<div style="text-align: center;"  >
+
+		<h1>Hello Programmers!</h1>
+		<hr/>
+		<h2>Input Programmers Data</h2>
+		<h2 th:text="${msg}"></h2>
+		<form action="addprogrammer" method="POST">
+
+
+			<h3>
+				 Programmers Name      : <input type="text" name="pname"></input>
+			</h3>
+
+			<h3>
+				Programmers Language   : <input type="text" name="plang"></input>
+			</h3>
+
+			<button type="submit">Add Programmers </button>
+		</form>
+		
+		<hr/>
+	
+		
+		<form action="findbyId" method="POST">
+
+
+			<h3>
+				 Enter Programmer Id   : <input type="text" name="pid"></input>
+			</h3>
+
+		
+
+			<button type="submit">Find By ID </button>
+		</form>
+		
+				<hr/>
+	
+		
+		<form action="findbyLang" method="POST">
+
+
+			<h3>
+				 Enter Programmer Language   : <input type="text" name="plang"></input>
+			</h3>
+
+		
+
+			<button type="submit">Find By Language </button>
+		</form>
+		
+		
+		<hr/>
+	
+		
+		<form action="deleteProgrammer" method="GET">
+
+
+			<h3>
+				 Enter Programmer Id   : <input type="text" name="pid"></input>
+			</h3>
+
+		
+
+			<button type="submit">Delete</button>
+		</form>
+		
+		
+		<hr/>
+	
+		
+		<form action="updateProgrammer" method="POST">
+
+
+			<h3>
+				 Enter Programmer Id   : <input type="text" name="pid"></input>
+			</h3>
+						<h3>
+				 Programmers Name      : <input type="text" name="pname"></input>
+			</h3>
+
+			<h3>
+				Programmers Language   : <input type="text" name="plang"></input>
+			</h3>
+
+			<button type="submit">Update Programmers </button>
+
+		<hr/>
+
+		</form>
+		
+	</div>
+</body>
+</html>
